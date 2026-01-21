@@ -51,6 +51,15 @@ export default function RootLayout({
               <a href="/account" className="hover:text-ink">
                 Konto
               </a>
+              <a href="/login" className="hover:text-ink">
+                Kundenlogin
+              </a>
+              <a href="/business/login" className="hover:text-ink">
+                Geschaeftslogin
+              </a>
+              <a href="/admin/login" className="hover:text-ink">
+                Admin
+              </a>
             </nav>
             <a
               href="/search"
