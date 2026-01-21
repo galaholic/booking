@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: #1f1f1b;
+  --color-sand: #f7f1e7;
+  --color-clay: #e4d3c0;
+  --color-copper: #c27443;
+  --color-moss: #64735a;
+  --color-tide: #28555a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-ink);
+  background: linear-gradient(140deg, #f7f1e7 0%, #f1e7d8 40%, #e8dccd 100%);
+  min-height: 100vh;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.bg-atmosphere {
+  background: radial-gradient(circle at top right, rgba(40, 85, 90, 0.16), transparent 55%),
+    radial-gradient(circle at 20% 40%, rgba(194, 116, 67, 0.18), transparent 50%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+.chip {
+  @apply rounded-full border border-ink/20 px-3 py-1 text-xs uppercase tracking-wide;
+}
